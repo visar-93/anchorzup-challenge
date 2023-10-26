@@ -1,0 +1,129 @@
+body{
+  font-family: Arial, sans-serif;
+}
+*{
+  margin: 0;
+}
+.container{
+  height: 100vh;
+}
+.container .row{
+  display: flex;
+  justify-content: space-between;
+height: 100%;
+}
+
+/*.container .row{*/
+/*    width: 30%;*/
+/*    background-color: red;*/
+/*}*/
+.container .row .col{
+  padding: 50px;
+}
+.container .row .col:first-child{
+  width: 30%;
+  text-align: center;
+  background-color: darkgrey;
+}
+.container .row ul{
+  padding: 50px 0 0 0;
+  list-style-type: none;
+
+  margin: 0;
+}
+.container .row ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .row ul li img{
+width: 30px;
+}
+.container .row .col:last-child{
+  width: 70%;
+
+  background-color: white;
+}
+
+input{
+  border: 1px solid grey;
+  padding: 10px;
+  width: 50%;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Styling the select drop-down */
+.custom-select select {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #000;
+}
+
+.custom-input {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  height: 40px;
+}
+
+.custom-input input[type="text"] {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f8f8f8;
+  outline: none;
+}
+
+.custom-input input[type="text"]:focus {
+  border-color: #9ecaed; /* Light blue - or choose your color for 'focus' state */
+  box-shadow: 0 0 10px #9ecaed; /* Adds a 'glow' effect */
+}
+
+/* If you want a consistent font style across elements */
+.custom-select, .custom-input input[type="text"] {
+  font-family: Arial, sans-serif; /* Your preferred font family */
+  font-size: 16px; /* Your preferred font size */
+}
+
+button{
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 40px;
+  border: 1px solid blueviolet;
+}
+
+h2{
+  margin-bottom: 30px;
+}
