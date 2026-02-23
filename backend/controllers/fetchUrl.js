@@ -4,8 +4,6 @@ const { generateRandomString } = require("../libs/utils");
 const urlShortener = async (req, res, next) => {
   const urlString = `${process.env.SITE_URL}/${generateRandomString()}`;
 
-  console.log(test)
-
   const url = req.body.url;
   const time = +req.body.time;
 
